@@ -51,7 +51,7 @@ const EditCompanies = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5000/companies/${id}`, data)
+      .put(`https://pantain-backend.vercel.app/companies/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Company has been updated!", { variant: "success" });
