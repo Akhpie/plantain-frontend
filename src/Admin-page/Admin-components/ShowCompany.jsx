@@ -19,7 +19,7 @@ const ShowCompany = () => {
 
   useEffect(() => {
     axios
-      .get(`https://pantain-backend.vercel.app/companies/${id}`)
+      .get(`http://localhost:5000/companies/${id}`)
       .then((response) => {
         setCompany(response.data);
         setLoading(false);

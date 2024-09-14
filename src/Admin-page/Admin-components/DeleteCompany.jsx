@@ -18,7 +18,7 @@ const DeleteCompany = () => {
   const handleDeleteCompany = () => {
     setLoading(true);
     axios
-      .delete(`https://pantain-backend.vercel.app/companies/${id}`)
+      .delete(`http://localhost:5000/companies/${id}`)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Company has been Deleted!", { variant: "success" });
